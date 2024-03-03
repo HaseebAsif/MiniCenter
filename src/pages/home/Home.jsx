@@ -282,7 +282,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="mc-case-study-section py-[5%] relative">
+      <section className="mc-case-study-section py-[5%] relative overflow-hidden">
         <div className="absolute top-[30%] left-0 ml-[-5%] h-[50%] w-[10%] bg-gray-400 opacity-50 rounded-full z-1 shadow-right"></div>
         <div className="absolute top-[30%] right-[-5%] w-[10%] h-[50%] bg-gray-400 opacity-50 rounded-full z-1 shadow-left"></div>
         <div className="container">
