@@ -30,9 +30,12 @@ const Nav = ({ className }) => {
 
             <div
               onClick={() => setOpen(!open)}
-              className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+              className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden text-white"
             >
-              <ion-icon name={open ? "close" : "menu"}></ion-icon>
+              <ion-icon
+                name={open ? "close" : "menu"}
+                className="text-white"
+              ></ion-icon>
             </div>
 
             <ul
