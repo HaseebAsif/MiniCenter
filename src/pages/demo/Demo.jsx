@@ -7,6 +7,7 @@ import arrt from "../../assets/images/Demo PSD Images/a-up.png";
 import rline from "../../assets/images/Demo PSD Images/r-line.png";
 import bline from "../../assets/images/Demo PSD Images/b-line.png";
 import logo from "../../assets/images/Demo PSD Images/logo.png";
+import { Link } from "react-router-dom";
 
 const Demo = () => {
   let Links = [
@@ -32,7 +33,9 @@ const Demo = () => {
                 className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800"
               >
-                <img src={logo} alt="Logo" className="w-[200px] md:w-full" />
+                <Link to="/">
+                  <img src={logo} alt="Logo" className="w-[200px] md:w-full" />
+                </Link>
               </div>
 
               <div
