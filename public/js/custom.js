@@ -1,0 +1,26 @@
+$(document).ready(function(){
+    // brand carousel
+    $('.cm-partners-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots:false,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            576:{
+                items:3
+            },
+            992:{
+                items:5
+            },
+            1200:{
+                items:6
+            }
+        }
+    });
+});
