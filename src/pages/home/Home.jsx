@@ -22,6 +22,9 @@ import logoipsum331png from "../../assets/images/Minicenter PSD Images/logoipsum
 import logoipsum332png from "../../assets/images/Minicenter PSD Images/logoipsum-332.png";
 import logoipsum214png from "../../assets/images/Minicenter PSD Images/logoipsum-214.png";
 import graph from "../../assets/images/Minicenter PSD Images/graph.jpg";
+import rdot from "../../assets/images/Minicenter PSD Images/red-dot.png";
+import rline from "../../assets/images/Minicenter PSD Images/red-line-1.png";
+import miniline from "../../assets/images/Minicenter PSD Images/mini-line.png";
 import Nav from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
@@ -86,6 +89,12 @@ function Home() {
                   className="img-fluid"
                   src={treetranparentpng}
                   alt="tree-tranparent"
+                />
+                <img className="red-dot" src={rdot} alt="dot" />
+                <img
+                  className="red-line-1 big-line"
+                  src={rline}
+                  alt="red-line"
                 />
               </div>
             </div>
@@ -213,6 +222,8 @@ function Home() {
               <div className="advanced-img-box">
                 <img className="img-fluid main-img" src={laptop} alt="laptop" />
                 <img className="vector" src={glow6png} alt="glow-img" />
+                <img className="red-dot-1" src={rdot} alt="red-dot" />
+                <img className="red-dot-2" src={rdot} alt="red-dot" />
               </div>
             </div>
             <div className="col-lg-6">
@@ -287,7 +298,7 @@ function Home() {
         <div className="absolute top-[30%] left-0 ml-[-5%] h-[50%] w-[10%] bg-gray-400 opacity-50 rounded-full z-1 shadow-right"></div>
         <div className="absolute top-[30%] right-[-5%] w-[10%] h-[50%] bg-gray-400 opacity-50 rounded-full z-1 shadow-left"></div>
         <div className="container">
-          <div className="row">
+          <div className="row relative z-10">
             <div className="col-lg-12">
               <div className="mc-header-content">
                 <h3 className="md:text-[60px] text-[36px] font-extrabold">
@@ -378,6 +389,7 @@ function Home() {
         </div>
       </section>
       <Footer />
+      <img className="mini-line" src={miniline} alt="line" />
     </>
   );
 }

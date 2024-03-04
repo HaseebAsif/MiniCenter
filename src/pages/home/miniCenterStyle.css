@@ -672,7 +672,8 @@ img {
 }
 .case-study-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5%;
   align-items: center;
   padding: 40px;
   background-color: #ffff;
@@ -1016,4 +1017,109 @@ img {
 
 .custom-dots button.dot.slick-active {
   background-color: blue; /* Color for the active dot */
+}
+
+/* Lines */
+.mc-hero-section .hero-img-box .red-dot {
+  position: absolute;
+  bottom: -19px;
+  left: 39.5%;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.big-line {
+  position: absolute;
+  top: 100% !important;
+  height: 3425px;
+  right: 30% !important;
+  margin: 0 auto;
+  z-index: 2;
+  width: 1000px;
+}
+
+.mc-customer-impact-section .main-img-box .red-dot {
+  position: absolute;
+  top: 26px;
+  left: 90px;
+}
+.mc-customer-impact-section .main-img-box .red-dot-2 {
+  position: absolute;
+  bottom: -10px;
+  left: 166px;
+}
+
+.mc-advanced-section .advanced-img-box .red-dot-1 {
+  position: absolute;
+  top: -40%;
+  left: 135%;
+}
+.mc-advanced-section .advanced-img-box .red-dot-2 {
+  position: absolute;
+  top: -10%;
+  left: 57%;
+}
+
+.mc-case-study-section .case-study-wrapper .red-dot {
+  position: absolute;
+  bottom: -110px;
+  left: -40px;
+  right: 0;
+  margin: 0 auto;
+}
+
+.mc-hero-section .hero-img-box .red-line-1 {
+  position: absolute;
+  top: 107%;
+  height: 3425px;
+  right: 33%;
+  margin: 0 auto;
+  z-index: 2;
+  width: 1000px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.mini-line {
+  position: absolute;
+  top: 682px;
+  left: 13%;
+  /* height: 79.5%; */
+  z-index: 0;
+  width: 69%;
+}
+
+@media screen and (max-width: 767px) {
+  .mc-hero-section .hero-img-box .red-dot {
+    display: none;
+  }
+
+  .mc-customer-impact-section .main-img-box .red-dot {
+    display: none;
+  }
+  .mc-customer-impact-section .main-img-box .red-dot-2 {
+    display: none;
+  }
+
+  .mc-advanced-section .advanced-img-box .red-dot-1 {
+    display: none;
+  }
+  .mc-advanced-section .advanced-img-box .red-dot-2 {
+    display: none;
+  }
+
+  .mc-case-study-section .case-study-wrapper .red-dot {
+    display: none;
+  }
+
+  .mc-hero-section .hero-img-box .red-line-1 {
+    display: none;
+  }
+  .mini-line {
+    display: none;
+  }
 }

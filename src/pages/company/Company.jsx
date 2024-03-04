@@ -24,7 +24,7 @@ function Company() {
     <>
       <section className="overflow-hidden relative z-0">
         <Nav />
-        <section className="mc-mission-section bg-[#091e56] md:pt-[10%] pt-[20%] pb-[5%]">
+        <section className="mc-mission-section bg-[#091e56] md:pt-[10%] pt-[20%] pb-[5%] relative z-[2]">
           <div className="container mx-auto px-4">
             <h1 className="text-[60px] text-white text-center">Our Mission</h1>
             <p className="text-center py-5 text-white">
