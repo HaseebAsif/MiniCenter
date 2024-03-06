@@ -8,6 +8,10 @@ import h1png from "../../assets/images/Company PSD Images/h1.png";
 import h2png from "../../assets/images/Company PSD Images/h2.png";
 import h3png from "../../assets/images/Company PSD Images/h3.png";
 import h4png from "../../assets/images/Company PSD Images/h4.png";
+import glowimgpng from "../../assets/images/Minicenter PSD Images/glow-img.png";
+import glow2png from "../../assets/images/Minicenter PSD Images/glow-2.png";
+import glow3png from "../../assets/images/Minicenter PSD Images/glow-3.png";
+import glow4png from "../../assets/images/Minicenter PSD Images/glow-4.png";
 import logoipsum241png from "../../assets/images/Minicenter PSD Images/logoipsum-241.png";
 import logoipsum289png from "../../assets/images/Minicenter PSD Images/logoipsum-289.png";
 import logoipsum323png from "../../assets/images/Minicenter PSD Images/logoipsum-323.png";
@@ -24,10 +28,10 @@ function Company() {
     <>
       <section className="overflow-hidden relative z-0">
         <Nav />
-        <section className="mc-mission-section bg-[#091e56] md:pt-[10%] pt-[20%] pb-[5%] relative z-[2]">
+        <section className="mc-mission-section bg-none md:pt-[10%] pt-[20%] pb-[5%] relative z-10">
           <div className="container mx-auto px-4">
             <h1 className="text-[60px] text-white text-center">Our Mission</h1>
-            <p className="text-center py-5 text-white">
+            <p className="text-center text-[24px] py-5 text-white">
               MiniCenter pioneers advanced AI solutions to address the complex
               industrial compliance landscape
             </p>
@@ -66,6 +70,8 @@ function Company() {
               </div>
             </div>
           </div>
+          <img className="vector-1" src={glowimgpng} alt="glow-img" />
+          <img className="vector-2" src={glow2png} alt="glow-img" />
         </section>
         <section className="mc-mini-center-section pt-10 md:pb-30 md:pb-[10%] pb-[45%] items-center">
           <div className="container mx-auto px-4">
@@ -108,6 +114,8 @@ function Company() {
               </div>
             </div>
           </div>
+          <img className="vector-1 absolute" src={glow3png} alt="glow-img" />
+          <img className="vector-2 absolute" src={glow4png} alt="glow-img" />
         </section>
         <section className="mc-partners-section">
           <div className="container">

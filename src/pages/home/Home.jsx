@@ -215,7 +215,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="mc-advanced-section pb-[40%] md:pb-[10%]">
+      <section className="mc-advanced-section pb-[40%] md:pb-[10%] relative z-[2] bg-none">
         <div className="container">
           <div className="row align-content-center">
             <div className="col-lg-6">

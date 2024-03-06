@@ -13,8 +13,7 @@ const Demo = () => {
   let Links = [
     { name: "Research", link: "/research" },
     { name: "Company", link: "/company" },
-    { name: "Resource Center", link: "/demo" },
-    { name: "FAQS", link: "/" },
+    { name: "Demo", link: "/demo" },
   ];
   let [open, setOpen] = useState(false);
   const fileInputRef = useRef(null);
@@ -130,16 +129,16 @@ const Demo = () => {
                 <h1 className="font-semibold md:text-[40px] text-[24px]">
                   Upload File
                 </h1>
-                <div
-                  className="relative border-2 border-dashed border-[#dde5fa] rounded-full w-full py-6 text-center cursor-pointer mt-5"
-                  onClick={handleButtonClick}
-                >
+                <div className="relative border-2 border-dashed border-[#dde5fa] rounded-full w-full py-6 text-center  mt-5">
                   <input type="file" ref={fileInputRef} className="hidden" />
                   <p className="md:text-[24px] md-[16px] flex justify-center items-center md:gap-5 gap-3">
                     <img src={arrt} alt="" />
                     <span>
                       Drag and drop files or
-                      <span className="font-semibold text-blue-600 pl-2">
+                      <span
+                        className="font-semibold text-blue-600 pl-2 cursor-pointer"
+                        onClick={handleButtonClick}
+                      >
                         Choose File
                       </span>
                     </span>

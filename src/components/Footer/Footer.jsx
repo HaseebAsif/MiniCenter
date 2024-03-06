@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logofooterpng from "../../assets/images/Minicenter PSD Images/logo-footer.png";
 import Container from "../../common/Container";
 
@@ -53,16 +54,16 @@ function Footer() {
               <h6 className="text-lg font-semibold mb-4">Quick Links</h6>
               <ul>
                 <li>
-                  <a href="#">Research</a>
+                  <Link to="/research">Research</Link>
                 </li>
                 <li>
-                  <a href="#">Company</a>
+                  <Link to="/company">Company</Link>
                 </li>
                 <li>
-                  <a href="#">Resource Center</a>
+                  <Link to="/">Resource Center</Link>
                 </li>
                 <li>
-                  <a href="#">FAQs</a>
+                  <Link to="#">FAQs</Link>
                 </li>
               </ul>
             </div>

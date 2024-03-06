@@ -8,8 +8,7 @@ const Nav = ({ className }) => {
   let Links = [
     { name: "Research", link: "/research" },
     { name: "Company", link: "/company" },
-    { name: "Resource Center", link: "/" },
-    { name: "FAQS", link: "/" },
+    { name: "Demo", link: "/demo" },
   ];
   let [open, setOpen] = useState(false);
   return (
