@@ -11,7 +11,6 @@ import h4png from "../../assets/images/Company PSD Images/h4.png";
 import glowimgpng from "../../assets/images/Minicenter PSD Images/glow-img.png";
 import glow2png from "../../assets/images/Minicenter PSD Images/glow-2.png";
 import glow3png from "../../assets/images/Minicenter PSD Images/glow-3.png";
-import glow4png from "../../assets/images/Minicenter PSD Images/glow-4.png";
 import logoipsum241png from "../../assets/images/Minicenter PSD Images/logoipsum-241.png";
 import logoipsum289png from "../../assets/images/Minicenter PSD Images/logoipsum-289.png";
 import logoipsum323png from "../../assets/images/Minicenter PSD Images/logoipsum-323.png";
@@ -115,7 +114,6 @@ function Company() {
             </div>
           </div>
           <img className="vector-1 absolute" src={glow3png} alt="glow-img" />
-          <img className="vector-2 absolute" src={glow4png} alt="glow-img" />
         </section>
         <section className="mc-partners-section">
           <div className="container">
