@@ -6,7 +6,7 @@ function Footer() {
   return (
     <section className="mc-footer bg-white text-black">
       <Container>
-        <div className="flex flex-col md:flex-row justify-between py-12 w-[90%] mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between py-12 w-[90%] mx-auto">
           <div className="flex-shrink-0">
             <div className="mc-footer-detail-box">
               <div className="mc-footer-logo mb-6 ">

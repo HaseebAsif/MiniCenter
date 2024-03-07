@@ -1093,7 +1093,7 @@ img {
   width: 69%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
   .mc-hero-section .hero-img-box .red-dot {
     display: none;
   }
@@ -1120,6 +1120,15 @@ img {
     display: none;
   }
   .mini-line {
+    display: none;
+  }
+  .mc-hero-section .vector-1 {
+    display: none;
+  }
+  .mc-hero-section .vector-2 {
+    display: none;
+  }
+  .mc-solutions-section .vector-2 {
     display: none;
   }
 }
