@@ -10,6 +10,7 @@ import logo from "../../assets/images/Demo PSD Images/logo.png";
 import { Link } from "react-router-dom";
 import { useDropzone } from "react-dropzone";
 import SuspendissePotentiButtons from "../../common/SuspendissePotentiButtons";
+import ScrollToTopOnMount from "../../common/ScrollToTopOnMount";
 
 const Demo = () => {
   let Links = [
@@ -43,6 +44,7 @@ const Demo = () => {
 
   return (
     <section className="bg-[#d4e7f7] min-h-screen relative overflow-hidden z-0">
+      <ScrollToTopOnMount />
       {/* Navbar */}
       <div className="w-full absolute top-0 left-0 z-50 lg:bg-none text-black">
         <Container className="relative items-center">

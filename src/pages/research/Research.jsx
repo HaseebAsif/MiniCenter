@@ -9,10 +9,12 @@ import bline from "../../assets/images/Research PSD Images/b-line.png";
 import rline from "../../assets/images/Research PSD Images/r-line.png";
 import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
+import ScrollToTopOnMount from "../../common/ScrollToTopOnMount";
 
 const Research = () => {
   return (
     <section className="research-page relative overflow-hidden z-0">
+      <ScrollToTopOnMount />
       <section className="bg-[#0a2159] min-h-screen">
         <Container>
           <Nav />

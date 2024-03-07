@@ -21,11 +21,13 @@ import rline from "../../assets/images/Company PSD Images/rnew.png";
 import bline from "../../assets/images/Company PSD Images/bnew.png";
 import Container from "../../common/Container";
 import Footer from "../../components/Footer/Footer";
+import ScrollToTopOnMount from "../../common/ScrollToTopOnMount";
 
 function Company() {
   return (
     <>
       <section className="overflow-hidden relative z-0">
+        <ScrollToTopOnMount />
         <Nav />
         <section className="mc-mission-section bg-none md:pt-[10%] pt-[20%] pb-[5%] relative z-0">
           <div className="container mx-auto px-4 relative z-10">
