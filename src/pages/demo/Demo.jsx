@@ -46,7 +46,7 @@ const Demo = () => {
       {/* Navbar */}
       <div className="w-full absolute top-0 left-0 z-50 lg:bg-none text-black">
         <Container className="relative items-center">
-          <div className="lg:flex items-center justify-between bg-none py-4">
+          <div className="lg:flex items-center justify-between bg-none py-4 px-5">
             <div className="menu flex gap-5">
               <div
                 className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 

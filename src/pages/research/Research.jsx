@@ -28,7 +28,7 @@ const Research = () => {
               dictum, mi ut aliquam porta, dui enim eleif end ante, sit amet
               convallis metus ligula quis purus.
             </p>
-            <div className="img-sec-1 md:flex md:py-[5%] py-[3%]  items-center">
+            <div className="img-sec-1 md:flex md:py-[5%] py-[3%]  items-center md:px-[2%]">
               <div className="image md:w-[50%] w-[90%] mx-auto">
                 <img src={graph} alt="" />
               </div>
@@ -36,7 +36,7 @@ const Research = () => {
                 <h2 className="md:text-[36px] text-[24px] pt-3 md:pt-0 font-semibold">
                   NASA Shadow Sheild Genetic Algorithm
                 </h2>
-                <p className="md:text-[24px] text-[16px] md:py-8 py-4 leading-[1.5] md:pr-8">
+                <p className="md:text-[24px] text-[16px] md:py-8 py-4 leading-[1.5]">
                   Steven conducted research into optimizing NASA&apos;s Shadow
                   Shield, utilizing C++ to develop his Genetic Algorithm which
                   increased efficiency of determining the optimal dimensions and
@@ -47,7 +47,7 @@ const Research = () => {
                 </p>
               </div>
             </div>
-            <div className="img-sec-1 md:flex md:py-16 py-2 items-center flex-row-reverse md:gap-32">
+            <div className="img-sec-1 md:flex md:py-16 py-2 items-center flex-row-reverse md:gap-32 md:px-[2%]">
               <div className="image md:w-[50%] w-[90%] mx-auto">
                 <img src={sec2} alt="" />
               </div>
@@ -77,14 +77,14 @@ const Research = () => {
       </section>
       <section className="bg-[#eaeefa] min-h-screen">
         <Container>
-          <section className="r-sec-2 pt-20 text-black relative z-[2]">
+          <section className="r-sec-2 pt-20 text-black relative z-[2] md:px-[2%]">
             <h1 className="md:text-[60px] text-[36px] font-semibold text-center">
               Our Upcoming Projects
             </h1>
             <p className="text-center md:text-[24px] text-[16px] font-normal pt-5">
               A Perfect Mix To Deliver World_Class Ai Solutions
             </p>
-            <div className="img-sec-1 md:flex md:py-16 py-8 items-center gap-10">
+            <div className="img-sec-1 md:flex md:py-16 py-8 items-center md:gap-32 md:px-[2%]">
               <div className="image md:w-[50%] w-[90%] mx-auto">
                 <img src={sec3} alt="" />
               </div>
@@ -105,7 +105,7 @@ const Research = () => {
                 </p>
               </div>
             </div>
-            <div className="img-sec-1 md:flex md:flex-row-reverse md:py-16 py-2 items-center gap-10">
+            <div className="img-sec-1 md:flex md:flex-row-reverse md:py-16 py-2 items-center md:gap-32 md:px-[2%]">
               <div className="image md:w-[50%] w-[90%] mx-auto">
                 <img src={sec4} alt="" />
               </div>
@@ -126,7 +126,7 @@ const Research = () => {
                 </p>
               </div>
             </div>
-            <div className="img-sec-1 md:flex md:py-16 py-2 items-center gap-10">
+            <div className="img-sec-1 md:flex md:py-16 py-2 items-center md:gap-32 md:px-[2%]">
               <div className="image md:w-[50%] w-[90%] mx-auto">
                 <img src={sec5} alt="" />
               </div>

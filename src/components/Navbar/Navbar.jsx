@@ -16,11 +16,11 @@ const Nav = ({ className }) => {
       className={`w-full absolute top-0 left-0 z-50 md:bg-none ${className}`}
     >
       <Container className="relative items-center">
-        <div className="lg:flex items-center justify-between bg-none py-4">
+        <div className="lg:flex items-center justify-between bg-none py-4 px-5">
           <div className="menu flex gap-5">
             <div
               className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-      text-gray-800"
+      text-gray-800 "
             >
               <Link to="/">
                 <img src={logo} alt="Logo" className="w-[200px] lg:w-full" />
