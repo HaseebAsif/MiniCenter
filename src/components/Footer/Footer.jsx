@@ -54,16 +54,36 @@ function Footer() {
               <h6 className="text-lg font-semibold mb-4">Quick Links</h6>
               <ul>
                 <li>
-                  <Link to="/research">Research</Link>
+                  <Link
+                    to="/research"
+                    className="hover:underline transition-all ease-in-out duration-500"
+                  >
+                    Research
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/company">Company</Link>
+                  <Link
+                    to="/company"
+                    className="hover:underline transition-all duration-500"
+                  >
+                    Company
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/">Resource Center</Link>
+                  <Link
+                    to="/"
+                    className="hover:underline transition-all duration-500"
+                  >
+                    Resource Center
+                  </Link>
                 </li>
                 <li>
-                  <Link to="#">FAQs</Link>
+                  <Link
+                    to="#"
+                    className="hover:underline transition-all duration-500"
+                  >
+                    FAQs
+                  </Link>
                 </li>
               </ul>
             </div>
