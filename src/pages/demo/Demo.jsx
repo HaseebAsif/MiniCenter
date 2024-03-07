@@ -43,29 +43,29 @@ const Demo = () => {
 
   return (
     <section className="bg-[#d4e7f7] min-h-screen relative overflow-hidden z-0">
-      {/* Navbara */}
-      <div className="w-full absolute top-0 left-0 z-50 md:bg-none text-black">
+      {/* Navbar */}
+      <div className="w-full absolute top-0 left-0 z-50 lg:bg-none text-black">
         <Container className="relative items-center">
-          <div className="md:flex items-center justify-between bg-none py-4">
+          <div className="lg:flex items-center justify-between bg-none py-4">
             <div className="menu flex gap-5">
               <div
                 className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800"
               >
                 <Link to="/">
-                  <img src={logo} alt="Logo" className="w-[200px] md:w-full" />
+                  <img src={logo} alt="Logo" className="w-[200px] lg:w-full" />
                 </Link>
               </div>
 
               <div
                 onClick={() => setOpen(!open)}
-                className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+                className="text-3xl absolute right-8 top-6 cursor-pointer lg:hidden"
               >
                 <ion-icon name={open ? "close" : "menu"}></ion-icon>
               </div>
 
               <ul
-                className={`md:flex md:items-center md:pb-0 pb-12 w-full absolute top-0 justify-between md:static md:bg-none md:z-auto z-[-1] left-0 md:w-full md:pl-0 pl-9 transition-all duration-500 ease-in ${
+                className={`lg:flex lg:items-center lg:pb-0 pb-12 w-full absolute top-0 justify-between lg:static lg:bg-none lg:z-auto z-[-1] left-0 lg:w-full lg:pl-0 pl-9 transition-all duration-500 ease-in ${
                   open ? "top-20" : "top-[-490px]"
                 }
                   ${open ? "bg-[#d4e7f7] md:bg-none" : ""}}`}
@@ -73,7 +73,7 @@ const Demo = () => {
                 {Links.map((link) => (
                   <li
                     key={link.name}
-                    className="md:ml-8 text-xl md:my-4 my-7 text-black"
+                    className="lg:ml-8 text-xl lg:my-4 my-7 text-black"
                   >
                     <a
                       href={link.link}
@@ -84,7 +84,7 @@ const Demo = () => {
                   </li>
                 ))}
                 <Button
-                  className="md:absolute top-6 right-7 border-2 border-blue-400  hover:border-blue-700 rounded-full px-7 py-3 md:text-[24px] text-[16px] text-black"
+                  className="lg:absolute top-6 right-7 border-2 border-blue-400  hover:border-blue-700 rounded-full px-7 py-3 lg:text-[24px] text-[16px] text-black"
                   style={{ color: "black" }}
                 >
                   <span className="text-black">Login</span>
