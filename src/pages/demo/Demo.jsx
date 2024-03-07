@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useCallback } from "react";
 import Container from "../../common/Container";
 import Button from "../../common/button";
 import Footer from "../../components/Footer/Footer";
@@ -8,6 +8,8 @@ import rline from "../../assets/images/Demo PSD Images/r-line.png";
 import bline from "../../assets/images/Demo PSD Images/b-line.png";
 import logo from "../../assets/images/Demo PSD Images/logo.png";
 import { Link } from "react-router-dom";
+import { useDropzone } from "react-dropzone";
+import SuspendissePotentiButtons from "../../common/SuspendissePotentiButtons";
 
 const Demo = () => {
   let Links = [
@@ -16,11 +18,29 @@ const Demo = () => {
     { name: "Demo", link: "/demo" },
   ];
   let [open, setOpen] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [selectedFile2, setSelectedFile2] = useState(null);
   const fileInputRef = useRef(null);
 
   const handleButtonClick = () => {
     fileInputRef.current.click();
   };
+
+  const onDrop = useCallback((acceptedFiles) => {
+    setSelectedFile(acceptedFiles[0]);
+  }, []);
+  const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
+
+  const onDrop2 = useCallback((acceptedFiles) => {
+    setSelectedFile2(acceptedFiles[0]);
+    console.log("Files dropped in upload media section:", acceptedFiles);
+  }, []);
+  const {
+    getRootProps: getRootProps2,
+    getInputProps: getInputProps2,
+    isDragActive: isDragActive2,
+  } = useDropzone({ onDrop: onDrop2 });
+
   return (
     <section className="bg-[#d4e7f7] min-h-screen relative overflow-hidden z-0">
       {/* Navbara */}
@@ -82,12 +102,21 @@ const Demo = () => {
             <h1 className="py-8 md:text-6xl text-[24px] font-semibold text-center md:text-left">
               Demo Title
             </h1>
-            <div className="gpt bg-white flex flex-col items-center justify-center px-8 md:py-28 py-20 text-center rounded-3xl">
+            <div className="gpt bg-white flex flex-col items-center justify-center px-8 md:py-20 py-20 text-center rounded-3xl">
               <img src={GPT} alt="" />
               <p className="text-3xl font-bold mt-4">
                 How can I help you today?
               </p>
+              <textarea
+                className="mt-4 p-4 w-full max-w-md rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:border-blue-500"
+                name=""
+                id=""
+                cols="30"
+                rows="2"
+                placeholder="Enter your message here..."
+              ></textarea>
             </div>
+            <SuspendissePotentiButtons />
             <div className="d-fields w-full flex flex-wrap justify-between py-12">
               {/* Card 1 */}
               <div className="card md:w-[48%] w-[100%] mb-8 bg-none border-2 border-[#07b2d9] rounded-3xl p-6">
@@ -98,6 +127,7 @@ const Demo = () => {
                   Quisque facilisis ligula augue, sodales facilisis lorem
                 </p>
               </div>
+
               {/* Card 2 */}
               <div className="card md:w-[48%] w-[100%] mb-8 bg-none border-2 border-[#07b2d9] rounded-3xl p-6">
                 <h2 className="text-xl font-semibold mb-2">
@@ -129,20 +159,43 @@ const Demo = () => {
                 <h1 className="font-semibold md:text-[40px] text-[24px]">
                   Upload File
                 </h1>
-                <div className="relative border-2 border-dashed border-[#dde5fa] rounded-full w-full py-6 text-center  mt-5">
-                  <input type="file" ref={fileInputRef} className="hidden" />
+                <div
+                  {...getRootProps()}
+                  className={`relative border-2 border-dashed border-[#dde5fa] rounded-full w-full py-6 text-center  mt-5 ${
+                    isDragActive ? "bg-blue-100" : ""
+                  }`}
+                >
+                  <input
+                    type="file"
+                    ref={fileInputRef}
+                    {...getInputProps()}
+                    className="hidden"
+                  />
                   <p className="md:text-[24px] md-[16px] flex justify-center items-center md:gap-5 gap-3">
                     <img src={arrt} alt="" />
                     <span>
-                      Drag and drop files or
-                      <span
-                        className="font-semibold text-blue-600 pl-2 cursor-pointer"
-                        onClick={handleButtonClick}
-                      >
-                        Choose File
-                      </span>
+                      {isDragActive ? (
+                        <span className="font-semibold text-blue-600 cursor-pointer">
+                          Drop the file here
+                        </span>
+                      ) : (
+                        <>
+                          Drag and drop files or{" "}
+                          <span
+                            className="font-semibold text-blue-600 pl-2 cursor-pointer"
+                            onClick={handleButtonClick}
+                          >
+                            Choose File
+                          </span>
+                        </>
+                      )}
                     </span>
                   </p>
+                  {selectedFile && (
+                    <p className="pt-3 text-[#999999]">
+                      Selected File: {selectedFile.name}
+                    </p>
+                  )}
                 </div>
                 <div className="flex justify-between w-full pt-3 text-[#999999]">
                   <p className="md:text-[24px] text-[16px]">
@@ -153,24 +206,48 @@ const Demo = () => {
                   </p>
                 </div>
               </div>
+
               <div className="gpt bg-white flex flex-col px-8 py-7 rounded-3xl w-full mt-16">
                 <h1 className="font-semibold md:text-[40px] text-[24px]">
                   Upload Media
                 </h1>
                 <div
-                  className="relative border-2 border-dashed border-[#dde5fa] rounded-full w-full py-6 text-center cursor-pointer mt-5"
-                  onClick={handleButtonClick}
+                  {...getRootProps2()}
+                  className={`relative border-2 border-dashed border-[#dde5fa] rounded-full w-full py-6 text-center  mt-5 ${
+                    isDragActive2 ? "bg-blue-100" : ""
+                  }`}
                 >
-                  <input type="file" ref={fileInputRef} className="hidden" />
+                  <input
+                    type="file"
+                    ref={fileInputRef}
+                    {...getInputProps2()}
+                    className="hidden"
+                  />
                   <p className="md:text-[24px] md-[16px] flex justify-center items-center md:gap-5 gap-3">
                     <img src={arrt} alt="" />
                     <span>
-                      Drag and drop files or
-                      <span className="font-semibold text-blue-600 pl-2">
-                        Choose File
-                      </span>
+                      {isDragActive2 ? (
+                        <span className="font-semibold text-blue-600 cursor-pointer">
+                          Drop the file here
+                        </span>
+                      ) : (
+                        <>
+                          Drag and drop files or{" "}
+                          <span
+                            className="font-semibold text-blue-600 pl-2 cursor-pointer"
+                            onClick={handleButtonClick}
+                          >
+                            Choose File
+                          </span>
+                        </>
+                      )}
                     </span>
                   </p>
+                  {selectedFile2 && (
+                    <p className="pt-3 text-[#999999]">
+                      Selected File: {selectedFile2.name}
+                    </p>
+                  )}
                 </div>
                 <div className="flex justify-between w-full pt-3 text-[#999999]">
                   <p className="md:text-[24px] text-[16px]">

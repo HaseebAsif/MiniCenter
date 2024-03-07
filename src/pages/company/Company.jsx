@@ -27,8 +27,8 @@ function Company() {
     <>
       <section className="overflow-hidden relative z-0">
         <Nav />
-        <section className="mc-mission-section bg-none md:pt-[10%] pt-[20%] pb-[5%] relative z-10">
-          <div className="container mx-auto px-4">
+        <section className="mc-mission-section bg-none md:pt-[10%] pt-[20%] pb-[5%] relative z-0">
+          <div className="container mx-auto px-4 relative z-10">
             <h1 className="text-[60px] text-white text-center">Our Mission</h1>
             <p className="text-center text-[24px] py-5 text-white">
               MiniCenter pioneers advanced AI solutions to address the complex
