@@ -172,7 +172,7 @@ function Company() {
                       The Perfect Mix To Deliver World-class Ai Solutions
                     </p>
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div className="mc-team-card">
                       <div className="team-member-img-box">
                         <a href="#">
