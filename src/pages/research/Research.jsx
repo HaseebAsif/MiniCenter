@@ -28,7 +28,7 @@ const Research = () => {
               dictum, mi ut aliquam porta, dui enim eleif end ante, sit amet
               convallis metus ligula quis purus.
             </p>
-            <div className="img-sec-1 md:flex md:py-[5%] py-2  items-center">
+            <div className="img-sec-1 md:flex md:py-[5%] py-[3%]  items-center">
               <div className="image md:w-[50%] w-[90%] mx-auto">
                 <img src={graph} alt="" />
               </div>
