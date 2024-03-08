@@ -64,7 +64,7 @@ function Home() {
     <>
       <Nav />
       <section className="mc-hero-section">
-        <div className="container">
+        <div className="container px-2 lg:px-8">
           <div className="row align-content-center">
             <div className="col-lg-6">
               <div className="hero-content">
@@ -105,7 +105,7 @@ function Home() {
       </section>
 
       <section className="mc-solutions-section">
-        <div className="container">
+        <div className="container px-2 lg:px-8">
           <div className="row justify-content-center">
             <div className="col-lg-12 py-5">
               <div className="mc-header-content">
@@ -159,7 +159,7 @@ function Home() {
       </section>
 
       <section className="mc-customer-impact-section">
-        <div className="container">
+        <div className="container px-2 lg:px-8">
           <div className="row items-center">
             <div className="col-lg-6">
               <div className="customer-impact-content items-center">
@@ -216,7 +216,7 @@ function Home() {
       </section>
 
       <section className="mc-advanced-section pb-[40%] md:pb-[10%] relative z-[2] bg-none">
-        <div className="container">
+        <div className="container px-2 lg:px-8">
           <div className="row align-content-center">
             <div className="col-lg-6">
               <div className="advanced-img-box">
@@ -250,7 +250,7 @@ function Home() {
       </section>
 
       <section className="mc-partners-section">
-        <div className="container">
+        <div className="container px-2 lg:px-8">
           <div className="row">
             <div className="col-lg-12">
               <div className="mc-partners-content ">
@@ -297,7 +297,7 @@ function Home() {
         {/* Causing over flow */}
         <div className="absolute top-[30%] left-0 ml-[-5%] h-[50%] w-[10%] bg-gray-400 opacity-50 rounded-full z-1 shadow-right"></div>
         <div className="absolute top-[30%] right-[-5%] w-[10%] h-[50%] bg-gray-400 opacity-50 rounded-full z-1 shadow-left"></div>
-        <div className="container">
+        <div className="container px-2 lg:px-8">
           <div className="row relative z-10">
             <div className="col-lg-12">
               <div className="mc-header-content">
@@ -365,7 +365,7 @@ function Home() {
       </section>
 
       <section className="mc-join-us-section">
-        <div className="container">
+        <div className="container px-2 lg:px-8">
           <div className="row">
             <div className="col-lg-12">
               <div className="join-us-content-box">

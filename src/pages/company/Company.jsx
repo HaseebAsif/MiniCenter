@@ -30,7 +30,7 @@ function Company() {
         <ScrollToTopOnMount />
         <Nav />
         <section className="mc-mission-section bg-none md:pt-[10%] pt-[20%] pb-[5%] relative z-0">
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="container mx-auto px-2 lg:px-8 relative z-10">
             <h1 className="text-[60px] text-white text-center">Our Mission</h1>
             <p className="text-center text-[24px] py-5 text-white">
               MiniCenter pioneers advanced AI solutions to address the complex
@@ -75,7 +75,7 @@ function Company() {
           <img className="vector-2" src={glow2png} alt="glow-img" />
         </section>
         <section className="mc-mini-center-section pt-10 md:pb-30 md:pb-[10%] pb-[45%] items-center">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-2 lg:px-8">
             <div className="flex flex-col md:flex-row justify-center items-center gap-[10%]">
               <div className="w-full md:w-2/3">
                 <div className="text-white">
@@ -164,7 +164,7 @@ function Company() {
         </section>
 
         <section className="pt-[2%] bg-[#eaeefa]">
-          <div className="mx-auto px-4">
+          <div className="mx-auto px-2 lg:px-8">
             <Container>
               <div className="flex flex-col md:flex-row justify-center">
                 <div className="w-full">
@@ -259,7 +259,7 @@ function Company() {
         </section>
         <section className="mc-expectation-section bg-[#eaeefa] py-10">
           <Container>
-            <div className="mx-auto px-4 w-full">
+            <div className="mx-auto px-2 lg:px-8 w-full">
               <div className="flex flex-col md:flex-row items-center justify-center">
                 <div className="w-full">
                   <div className="mc-expectation-content text-center">
