@@ -83,7 +83,7 @@ function Home() {
                 </a>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 relative">
               <div className="hero-img-box">
                 <img
                   className="img-fluid"
