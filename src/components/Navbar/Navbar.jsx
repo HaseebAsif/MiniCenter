@@ -17,7 +17,7 @@ const Nav = ({ className }) => {
     >
       <Container className="relative items-center">
         <div className="lg:flex items-center justify-between bg-none py-4 px-5">
-          <div className="menu flex gap-5">
+          <div className="menu flex gap-16 items-center">
             <div
               className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800 "
@@ -38,7 +38,7 @@ const Nav = ({ className }) => {
             </div>
 
             <ul
-              className={`lg:flex lg:items-center lg:pb-0 pb-12 w-full absolute top-0 justify-between lg:static  lg:z-auto z-[-1] left-0 lg:w-full lg:pl-0 pl-9 transition-all duration-500 ease-in ${
+              className={`lg:flex lg:items-center lg:pb-0 lg:pt-2 pb-12 w-full absolute top-0 justify-evenly lg:static  lg:z-auto z-[-1] left-0 lg:w-full lg:pl-0 pl-9 transition-all duration-500 ease-in ${
                 open ? "top-20 " : "top-[-490px]"
               } ${open ? "bg-[#092058] md:bg-none" : ""}}`}
             >
