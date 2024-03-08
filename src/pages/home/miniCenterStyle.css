@@ -513,7 +513,7 @@ img {
 }
 .mc-solution-box {
   padding: 30px 60px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: #172d6e;
   border-radius: 40px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
@@ -1091,6 +1091,14 @@ img {
   /* height: 79.5%; */
   z-index: 0;
   width: 69%;
+}
+
+.mc-advanced-section .advanced-img-box .red-dot-2 {
+  display: none;
+}
+
+.mc-advanced-section .advanced-img-box .red-dot-1 {
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {
