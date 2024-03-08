@@ -67,7 +67,7 @@ const Demo = () => {
               </div>
 
               <ul
-                className={`lg:flex lg:items-center lg:pb-0 pb-12 w-full absolute top-0 justify-between lg:static lg:bg-none lg:z-auto z-[-1] left-0 lg:w-full lg:pl-0 pl-9 transition-all duration-500 ease-in ${
+                className={`lg:flex lg:items-center lg:pb-0 lg:pt-2 pb-12 w-full absolute top-0 justify-evenly lg:static  lg:z-auto z-[-1] left-0 lg:w-full lg:pl-0 pl-9 transition-all duration-500 ease-in ${
                   open ? "top-20" : "top-[-490px]"
                 }
                   ${open ? "bg-[#d4e7f7] md:bg-none" : ""}}`}
