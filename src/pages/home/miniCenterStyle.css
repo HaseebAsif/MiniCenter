@@ -1101,8 +1101,8 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
-  .mc-hero-section .hero-img-box .red-dot {
+@media screen and (max-width: 1280px) {
+  .red-dot {
     display: none;
   }
 

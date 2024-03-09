@@ -190,7 +190,7 @@ function Home() {
                     </div>
                   </li>
                   <li>
-                    <div className="icon-box">
+                    <div className="icon-box ">
                       <img src={strategicpng} alt="strategic" />
                     </div>
                     <div className="meta-box">
@@ -207,8 +207,19 @@ function Home() {
             </div>
             <div className="col-lg-6">
               <div className="main-img-box">
-                <img className="img-fluid" src={circlepng} alt="circle" />
+                <img
+                  className="red-dot lg:!left-40 lg:!-top-5 2xl:!left-40 2xl:!top-5"
+                  src={rdot}
+                  alt="red-dot"
+                />
+
+                <img className="img-fluid " src={circlepng} alt="circle" />
                 <img className="vector" src={glow5png} alt="glow-img" />
+                <img
+                  className="red-dot lg:!left-48 lg:!top-[88%]"
+                  src={rdot}
+                  alt="red-dot"
+                />
               </div>
             </div>
           </div>
@@ -220,10 +231,13 @@ function Home() {
           <div className="row align-content-center">
             <div className="col-lg-6">
               <div className="advanced-img-box">
+                <img
+                  className="red-dot absolute !left-[78%] !-top-[10%] "
+                  src={rdot}
+                  alt="red-dot"
+                />
                 <img className="img-fluid main-img" src={laptop} alt="laptop" />
                 <img className="vector" src={glow6png} alt="glow-img" />
-                <img className="red-dot-1" src={rdot} alt="red-dot" />
-                <img className="red-dot-2" src={rdot} alt="red-dot" />
               </div>
             </div>
             <div className="col-lg-6">

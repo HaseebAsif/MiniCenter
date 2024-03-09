@@ -29,9 +29,11 @@ function Company() {
       <section className="overflow-hidden relative z-0">
         <ScrollToTopOnMount />
         <Nav />
-        <section className="mc-mission-section bg-none md:pt-[10%] pt-[20%] pb-[5%] relative z-0">
+        <section className="mc-mission-section bg-none md:pt-[10%] pt-[20%] pb-[5%] relative">
           <div className="container mx-auto px-2 lg:px-8 relative z-10">
-            <h1 className="text-[60px] text-white text-center">Our Mission</h1>
+            <h1 className="text-[60px] text-white relative z-10 text-center">
+              Our Mission
+            </h1>
             <p className="text-center text-[24px] py-5 text-white">
               MiniCenter pioneers advanced AI solutions to address the complex
               industrial compliance landscape
@@ -77,12 +79,12 @@ function Company() {
         <section className="mc-mini-center-section pt-10 md:pb-30 md:pb-[10%] pb-[45%] items-center">
           <div className="container mx-auto px-2 lg:px-8">
             <div className="flex flex-col md:flex-row justify-center items-center gap-[10%]">
-              <div className="w-full md:w-2/3">
+              <div className="w-full md:w-2/3 ">
                 <div className="text-white">
                   <h2 className="md:text-[70px] text-[36px] font-semibold mb-8">
                     MiniCenter
                   </h2>
-                  <p className="md:text-[24px] text-[16px] mb-4">
+                  <p className="md:text-[24px] text-[16px] mb-4 relative z-10">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
