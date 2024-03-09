@@ -117,35 +117,35 @@ function Home() {
                 </p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 z-10">
               <div className="mc-solution-box">
                 <img src={sol1png} alt="mission-img" />
                 <h6>Assess</h6>
                 <p>Identify compliance needs, challenges and goals</p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 z-10">
               <div className="mc-solution-box">
                 <img src={sol2png} alt="mission-img" />
                 <h6>Collaborate</h6>
                 <p>Integrate and analyze existing data for insights</p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 z-10">
               <div className="mc-solution-box">
                 <img src={sol3png} alt="mission-img" />
                 <h6>Create</h6>
                 <p>Choose or develop tailored algorithms</p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 z-10">
               <div className="mc-solution-box">
                 <img src={sol4png} alt="mission-img" />
                 <h6>Train</h6>
                 <p>Iteratively fine-tune and refine the solution</p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 z-10">
               <div className="mc-solution-box">
                 <img src={sol5png} alt="mission-img" />
                 <h6>Optimize</h6>

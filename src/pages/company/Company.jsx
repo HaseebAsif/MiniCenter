@@ -36,33 +36,33 @@ function Company() {
               MiniCenter pioneers advanced AI solutions to address the complex
               industrial compliance landscape
             </p>
-            <div className="flex flex-col md:flex-row md:space-x-4 py-10">
-              <div className="w-full md:w-1/4">
-                <div className="mc-mission-box">
+            <div className="flex flex-col md:flex-row md:space-x-4 py-10 z-10">
+              <div className="w-full md:w-1/4 z-10">
+                <div className="mc-mission-box z-10">
                   <img src={c1png} alt="mission-img" className="w-full" />
                   <h6 className="text-lg mt-2">
                     Precision Solutions, Tailored to You
                   </h6>
                 </div>
               </div>
-              <div className="w-full md:w-1/4">
-                <div className="mc-mission-box">
+              <div className="w-full md:w-1/4 z-10">
+                <div className="mc-mission-box z-10">
                   <img src={c2png} alt="mission-img" className="w-full" />
                   <h6 className="text-lg mt-2">
                     Proactively Navigate compliance landscape
                   </h6>
                 </div>
               </div>
-              <div className="w-full md:w-1/4">
-                <div className="mc-mission-box">
+              <div className="w-full md:w-1/4 z-10">
+                <div className="mc-mission-box z-10">
                   <img src={c3png} alt="mission-img" className="w-full" />
                   <h6 className="text-lg mt-2">
                     Revolutionize Efficiency Elevate Opetations
                   </h6>
                 </div>
               </div>
-              <div className="w-full md:w-1/4">
-                <div className="mc-mission-box">
+              <div className="w-full md:w-1/4 z-10">
+                <div className="mc-mission-box z-10">
                   <img src={c4png} alt="mission-img" className="w-full" />
                   <h6 className="text-lg mt-2">
                     Innovation Today, Relevance Tomorrow
