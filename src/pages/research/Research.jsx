@@ -9,6 +9,9 @@ import bline from "../../assets/images/Research PSD Images/b-line.png";
 import rline from "../../assets/images/Research PSD Images/r-line.png";
 import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
+import glowimgpng from "../../assets/images/Minicenter PSD Images/glow-img.png";
+import glow2png from "../../assets/images/Minicenter PSD Images/glow-2.png";
+import glow3png from "../../assets/images/Minicenter PSD Images/glow-3.png";
 import ScrollToTopOnMount from "../../common/ScrollToTopOnMount";
 
 const Research = () => {
@@ -16,6 +19,16 @@ const Research = () => {
     <section className="research-page relative overflow-hidden z-0">
       <ScrollToTopOnMount />
       <section className="bg-[#0a2159] min-h-screen">
+        <img
+          className="vector-1 absolute top-0 left-0"
+          src={glowimgpng}
+          alt="glow-img"
+        />
+        <img
+          className="vector-2 absolute right-0"
+          src={glow2png}
+          alt="glow-img"
+        />
         <Container>
           <Nav />
           <section className="r-sec-1 h-full md:pt-[10%] pt-[25%] text-white relative z-[2]">
