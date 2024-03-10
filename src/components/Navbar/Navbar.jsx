@@ -17,7 +17,7 @@ const Nav = ({ className }) => {
     >
       <Container className="relative items-center">
         <div className="lg:flex items-center justify-between bg-none py-4 px-5">
-          <div className="menu flex gap-16 items-center">
+          <div className="menu flex items-center">
             <div
               className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800 "

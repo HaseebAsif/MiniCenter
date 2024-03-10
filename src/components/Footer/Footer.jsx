@@ -90,37 +90,37 @@ function Footer() {
             <div className="mc-quick-links-box">
               <h6 className="text-lg font-semibold mb-4">Solutions</h6>
               <ul>
-                <li>
-                  <a href="#">Assess</a>
+                <li className="hover:underline transition-all ease-in-out duration-500">
+                  <Link href="#">Assess</Link>
                 </li>
-                <li>
-                  <a href="#">Collaborate</a>
+                <li className="hover:underline transition-all ease-in-out duration-500">
+                  <Link href="#">Collaborate</Link>
                 </li>
-                <li>
-                  <a href="#">Create</a>
+                <li className="hover:underline transition-all ease-in-out duration-500">
+                  <Link href="#">Create</Link>
                 </li>
-                <li>
-                  <a href="#">Train</a>
+                <li className="hover:underline transition-all ease-in-out duration-500">
+                  <Link href="#">Train</Link>
                 </li>
-                <li>
-                  <a href="#">Optimize</a>
+                <li className="hover:underline transition-all ease-in-out duration-500">
+                  <Link href="#">Optimize</Link>
                 </li>
               </ul>
             </div>
             <div className="mc-quick-links-box">
               <h6 className="text-lg font-semibold mb-4">Resources</h6>
               <ul>
-                <li>
-                  <a href="#">News</a>
+                <li className="hover:underline transition-all ease-in-out duration-500">
+                  <Link href="#">News</Link>
                 </li>
-                <li>
-                  <a href="#">Press releases</a>
+                <li className="hover:underline transition-all ease-in-out duration-500">
+                  <Link href="#">Press releases</Link>
                 </li>
-                <li>
-                  <a href="#">Videos</a>
+                <li className="hover:underline transition-all ease-in-out duration-500">
+                  <Link href="#">Videos</Link>
                 </li>
-                <li>
-                  <a href="#">Blog</a>
+                <li className="hover:underline transition-all ease-in-out duration-500">
+                  <Link href="#">Blog</Link>
                 </li>
               </ul>
             </div>

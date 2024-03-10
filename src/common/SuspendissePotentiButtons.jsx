@@ -24,7 +24,7 @@ const SuspendissePotentiButtons = () => {
       {buttonsClicked.map((isClicked, index) => (
         <button
           key={index}
-          className={`w-16 h-16 m-4 rounded-full border border-gray-400 focus:outline-none ${
+          className={`w-16 h-16 m-4 rounded-2xl border border-gray-400 focus:outline-none ${
             isClicked ? "bg-blue-500 text-white" : "bg-white"
           }`}
           onClick={() => handleClick(index)}

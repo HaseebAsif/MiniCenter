@@ -49,7 +49,7 @@ const Demo = () => {
       <div className="w-full absolute top-0 left-0 z-50 lg:bg-none text-black">
         <Container className="relative items-center">
           <div className="lg:flex items-center justify-between bg-none py-4 px-5">
-            <div className="menu flex gap-5">
+            <div className="menu flex gap-2">
               <div
                 className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800"
@@ -77,12 +77,12 @@ const Demo = () => {
                     key={link.name}
                     className="lg:ml-8 text-xl lg:my-4 my-7 text-black"
                   >
-                    <a
-                      href={link.link}
+                    <Link
+                      to={link.link}
                       className={` hover:text-gray-600 duration-500`}
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
                 <Button
@@ -109,15 +109,15 @@ const Demo = () => {
               <p className="text-3xl font-bold mt-4">
                 How can I help you today?
               </p>
-              <textarea
-                className="mt-4 p-4 w-full max-w-md rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:border-blue-500"
-                name=""
-                id=""
-                cols="30"
-                rows="2"
-                placeholder="Enter your message here..."
-              ></textarea>
             </div>
+            <textarea
+              className="mt-4 p-4 w-full max-w-md rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:border-blue-500 flex justify-center mx-auto"
+              name=""
+              id=""
+              cols="30"
+              rows="2"
+              placeholder="Enter your message here..."
+            ></textarea>
             <SuspendissePotentiButtons />
             <div className="d-fields w-full flex flex-wrap justify-between py-12">
               {/* Card 1 */}
