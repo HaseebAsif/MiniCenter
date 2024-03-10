@@ -33,6 +33,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Home() {
+  // Responsive slider settings
   const settings = {
     dots: true,
     infinite: true,
@@ -48,6 +49,7 @@ function Home() {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          arrows: false,
           slidesToScroll: 1,
         },
       },
@@ -55,6 +57,7 @@ function Home() {
         breakpoint: 992,
         settings: {
           slidesToShow: 1,
+          arrows: false,
           slidesToScroll: 1,
         },
       },
