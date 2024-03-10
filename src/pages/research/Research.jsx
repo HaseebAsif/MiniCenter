@@ -29,6 +29,11 @@ const Research = () => {
           src={glow2png}
           alt="glow-img"
         />
+        <img
+          className="vector-2 absolute left-0 bottom-0"
+          src={glow3png}
+          alt="glow-img"
+        />
         <Container>
           <Nav />
           <section className="r-sec-1 h-full md:pt-[10%] pt-[25%] text-white relative z-[2]">
