@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const SuspendissePotentiButtons = () => {
   // State to track the clicked status of each button
