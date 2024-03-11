@@ -1142,33 +1142,23 @@ img {
 }
 
 /* Slider */
-.case-study-wrapper .slick-slider {
-  overflow: visible;
-}
 
-.case-study-wrapper .slick-slide.slick-active {
-  opacity: 1;
-}
-
-.case-study-wrapper .slick-prev {
-  left: -30px;
-}
-
-.case-study-wrapper .slick-next {
-  right: -30px;
-}
-
-@keyframes slideInFromRight {
+@keyframes fadeIn {
   0% {
-    transform: translateX(100%);
-    opacity: 0;
+    opacity: 0; /* Start opacity */
+  }
+  50% {
+    opacity: 0.5; /* Mid opacity */
+  }
+  75% {
+    opacity: 0.75; /* Near end opacity */
   }
   100% {
-    transform: translateX(0);
-    opacity: 1;
+    opacity: 1; /* End opacity */
   }
 }
 
-.case-study-wrapper .slick-slider {
-  animation: slideInFromRight 0.5s ease forwards;
+.item {
+  opacity: 0; /* Start with 0 opacity */
+  animation: fadeIn 1s ease forwards; /* Animation */
 }
