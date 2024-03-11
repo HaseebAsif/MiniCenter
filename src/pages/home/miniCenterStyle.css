@@ -1170,5 +1170,5 @@ img {
 }
 
 .case-study-wrapper .slick-slider {
-  animation: slideInFromRight 2s ease forwards;
+  animation: slideInFromRight 0.5s ease forwards;
 }

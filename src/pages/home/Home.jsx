@@ -41,6 +41,7 @@ function Home() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    lazyLoad: true,
     autoplay: true,
     autoplaySpeed: 3000,
     dotsClass: "slick-dots custom-dots",
