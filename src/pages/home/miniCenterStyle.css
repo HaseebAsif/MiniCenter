@@ -1163,18 +1163,6 @@ img {
     transform: translateX(100%);
     opacity: 0;
   }
-  25% {
-    transform: translateX(100%);
-    opacity: 0.25;
-  }
-  50% {
-    transform: translateX(100%);
-    opacity: 0.5;
-  }
-  75% {
-    transform: translateX(100%);
-    opacity: 0.75;
-  }
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -1182,5 +1170,5 @@ img {
 }
 
 .case-study-wrapper .slick-slider {
-  animation: slideInFromRight 1s ease forwards;
+  animation: slideInFromRight 2s ease forwards;
 }
