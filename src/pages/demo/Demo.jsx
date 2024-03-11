@@ -125,8 +125,8 @@ const Demo = () => {
             ></textarea>
             <div className="d-fields w-full flex flex-wrap justify-between py-12">
               <button
-                className={`card md:w-[48%] w-[100%] text-left mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
-                  activeButton === 1 ? "bg-[#07b2d9]" : "bg-none"
+                className={`card md:w-[48%] w-[100%] text-left transition-all duration-500 mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
+                  activeButton === 1 ? "bg-[#07b2d9] text-white" : "bg-none"
                 }`}
                 onClick={() => handleButtonClick2(1)}
               >
@@ -140,8 +140,8 @@ const Demo = () => {
 
               {/* Button 2 */}
               <button
-                className={`card md:w-[48%] w-[100%] text-left mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
-                  activeButton === 2 ? "bg-[#07b2d9]" : "bg-none"
+                className={`card md:w-[48%] w-[100%] transition-all duration-500 text-left mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
+                  activeButton === 2 ? "bg-[#07b2d9] text-white" : "bg-none"
                 }`}
                 onClick={() => handleButtonClick2(2)}
               >
@@ -155,8 +155,8 @@ const Demo = () => {
 
               {/* Button 3 */}
               <button
-                className={`text-left card md:w-[48%] w-[100%] mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
-                  activeButton === 3 ? "bg-[#07b2d9]" : "bg-none"
+                className={`text-left card md:w-[48%] w-[100%] transition-all duration-500 mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
+                  activeButton === 3 ? "bg-[#07b2d9] text-white" : "bg-none"
                 }`}
                 onClick={() => handleButtonClick2(3)}
               >
@@ -170,8 +170,8 @@ const Demo = () => {
 
               {/* Button 4 */}
               <button
-                className={`text-left card md:w-[48%] w-[100%] mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
-                  activeButton === 4 ? "bg-[#07b2d9]" : "bg-none"
+                className={`text-left card md:w-[48%] w-[100%] transition-all duration-500 mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
+                  activeButton === 4 ? "bg-[#07b2d9] text-white" : "bg-none"
                 }`}
                 onClick={() => handleButtonClick2(4)}
               >

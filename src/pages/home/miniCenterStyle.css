@@ -1147,6 +1147,9 @@ img {
   0% {
     opacity: 0; /* Start opacity */
   }
+  25% {
+    opacity: 0.25; /* Start opacity */
+  }
   50% {
     opacity: 0.5; /* Mid opacity */
   }
@@ -1158,7 +1161,13 @@ img {
   }
 }
 
-.item {
+/* {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+} */
+
+.slick-current.slick-active .item {
   opacity: 0; /* Start with 0 opacity */
-  animation: fadeIn 1s ease forwards; /* Animation */
+  animation: fadeIn 1.5s ease forwards; /* Animation */
+  animation-iteration-count: 1; /* Run animation once when slide becomes active */
 }
