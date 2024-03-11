@@ -9,7 +9,6 @@ import bline from "../../assets/images/Demo PSD Images/b-line.png";
 import logo from "../../assets/images/Demo PSD Images/logo.png";
 import { Link } from "react-router-dom";
 import { useDropzone } from "react-dropzone";
-import SuspendissePotentiButtons from "../../common/SuspendissePotentiButtons";
 import ScrollToTopOnMount from "../../common/ScrollToTopOnMount";
 
 const Demo = () => {
@@ -22,6 +21,12 @@ const Demo = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [selectedFile2, setSelectedFile2] = useState(null);
   const fileInputRef = useRef(null);
+
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleButtonClick2 = (buttonId) => {
+    setActiveButton(buttonId);
+  };
 
   const handleButtonClick = () => {
     fileInputRef.current.click();
@@ -118,45 +123,66 @@ const Demo = () => {
               rows="2"
               placeholder="Enter your message here..."
             ></textarea>
-            <SuspendissePotentiButtons />
             <div className="d-fields w-full flex flex-wrap justify-between py-12">
-              {/* Card 1 */}
-              <div className="card md:w-[48%] w-[100%] mb-8 bg-none border-2 border-[#07b2d9] rounded-3xl p-6">
+              <button
+                className={`card md:w-[48%] w-[100%] text-left mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
+                  activeButton === 1 ? "bg-[#d4e7f7]" : "bg-none"
+                }`}
+                onClick={() => handleButtonClick2(1)}
+              >
                 <h2 className="text-xl font-semibold mb-2">
                   Suspendessie Potenti
                 </h2>
                 <p className="text-base">
                   Quisque facilisis ligula augue, sodales facilisis lorem
                 </p>
-              </div>
+              </button>
 
-              {/* Card 2 */}
-              <div className="card md:w-[48%] w-[100%] mb-8 bg-none border-2 border-[#07b2d9] rounded-3xl p-6">
+              {/* Button 2 */}
+              <button
+                className={`card md:w-[48%] w-[100%] text-left mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
+                  activeButton === 2 ? "bg-[#d4e7f7]" : "bg-none"
+                }`}
+                onClick={() => handleButtonClick2(2)}
+              >
                 <h2 className="text-xl font-semibold mb-2">
                   Suspendessie Potenti
                 </h2>
                 <p className="text-base">
                   Quisque facilisis ligula augue, sodales facilisis lorem
                 </p>
-              </div>
-              {/* Card 3 */}
-              <div className="card md:w-[48%] w-[100%] mb-8 bg-none border-2 border-[#07b2d9] rounded-3xl p-6">
+              </button>
+
+              {/* Button 3 */}
+              <button
+                className={`text-left card md:w-[48%] w-[100%] mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
+                  activeButton === 3 ? "bg-[#d4e7f7]" : "bg-none"
+                }`}
+                onClick={() => handleButtonClick2(3)}
+              >
                 <h2 className="text-xl font-semibold mb-2">
                   Suspendessie Potenti
                 </h2>
                 <p className="text-base">
                   Quisque facilisis ligula augue, sodales facilisis lorem
                 </p>
-              </div>
-              {/* Card 4 */}
-              <div className="card md:w-[48%] w-[100%] mb-8 bg-none border-2 border-[#07b2d9] rounded-3xl p-6">
+              </button>
+
+              {/* Button 4 */}
+              <button
+                className={`text-left card md:w-[48%] w-[100%] mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
+                  activeButton === 4 ? "bg-[#d4e7f7]" : "bg-none"
+                }`}
+                onClick={() => handleButtonClick2(4)}
+              >
                 <h2 className="text-xl font-semibold mb-2">
                   Suspendessie Potenti
                 </h2>
                 <p className="text-base">
                   Quisque facilisis ligula augue, sodales facilisis lorem
                 </p>
-              </div>
+              </button>
+
               <div className="gpt bg-white flex flex-col px-8 py-7 rounded-3xl w-full mt-5">
                 <h1 className="font-semibold md:text-[40px] text-[24px]">
                   Upload File
