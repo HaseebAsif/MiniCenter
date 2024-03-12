@@ -246,6 +246,10 @@ img {
   object-fit: scale-down;
   margin: 0 auto;
 }
+.case-study-box {
+  background-color: white;
+  width: fit-content;
+}
 .mc-partners-section .align-content-center {
   justify-content: center;
 }
@@ -675,8 +679,8 @@ img {
   justify-content: center;
   gap: 5%;
   align-items: center;
-  padding: 40px;
-  background-color: #ffff;
+  padding: 40px 2%;
+
   border-radius: 40px;
 }
 .case-study-box .graph-box {
@@ -1165,9 +1169,3 @@ img {
   opacity: 0;
   animation: fadeIn 2s ease forwards;
 } */
-
-.slick-current.slick-active .item {
-  opacity: 0; /* Start with 0 opacity */
-  animation: fadeIn 1.5s ease forwards; /* Animation */
-  animation-iteration-count: 1; /* Run animation once when slide becomes active */
-}

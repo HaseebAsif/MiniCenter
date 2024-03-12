@@ -37,12 +37,12 @@ function Home() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     lazyLoad: true,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     dotsClass: "slick-dots custom-dots",
     responsive: [
@@ -316,14 +316,14 @@ function Home() {
         <div className="absolute top-[30%] left-0 ml-[-5%] h-[50%] w-[10%] bg-gray-400 opacity-50 rounded-full z-1 shadow-right"></div>
         <div className="absolute top-[30%] right-[-5%] w-[10%] h-[50%] bg-gray-400 opacity-50 rounded-full z-1 shadow-left"></div>
         <div className="container px-2 lg:px-8">
-          <div className="row relative z-10">
+          <div className="row  z-10">
             <div className="col-lg-12">
               <div className="mc-header-content">
                 <h3 className="md:text-[60px] text-[36px] font-extrabold">
                   Case Studies
                 </h3>
               </div>
-              <div className="case-study-wrapper">
+              <div className="case-study-wrapper xl:hidden">
                 <Slider {...settings}>
                   <div className="item">
                     <div className="case-study-box">
@@ -377,8 +377,65 @@ function Home() {
                   </div>
                 </Slider>
               </div>
+              <div className="case-study-wrapper hidden xl:block h-[50vh] bg-white"></div>
             </div>
           </div>
+        </div>
+        <div className="z-10 hidden xl:block px-24 ">
+          <div className="absolute top-[30%] w-[90%]   z-10 ">
+            <Slider {...settings}>
+              <div className="item !flex items-center justify-center">
+                <div className="case-study-box">
+                  <div className="graph-box">
+                    <img className="img-fluid" src={graph} alt="graph" />
+                  </div>
+                  <div className="study-meta-box">
+                    <h4>NASA Shadow Shield Genetic Algorithm</h4>
+                    <p>
+                      Steven conducted research into optimizing NASA&apos;s
+                      Shadow Shield, utilizing C++ to develop his Genetic
+                      Algorithm which increased efficiency of determining the
+                      optimal dimensions and weight of the shield.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="item !flex items-center justify-center">
+                <div className="case-study-box">
+                  <div className="graph-box">
+                    <img src={graph} alt="graph" />
+                  </div>
+                  <div className="study-meta-box">
+                    <h4 className="text-black">
+                      NASA Shadow Shield Genetic Algorithm
+                    </h4>
+                    <p>
+                      Steven conducted research into optimizing NASA&apos;s
+                      Shadow Shield, utilizing C++ to develop his Genetic
+                      Algorithm which increased efficiency of determining the
+                      optimal dimensions and weight of the shield.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="item !flex items-center justify-center">
+                <div className="case-study-box">
+                  <div className="graph-box">
+                    <img src={graph} alt="graph" />
+                  </div>
+                  <div className="study-meta-box">
+                    <h4>NASA Shadow Shield Genetic Algorithm</h4>
+                    <p>
+                      Steven conducted research into optimizing NASA&apos;s
+                      Shadow Shield, utilizing C++ to develop his Genetic
+                      Algorithm which increased efficiency of determining the
+                      optimal dimensions and weight of the shield.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Slider>
+          </div>{" "}
         </div>
       </section>
 
