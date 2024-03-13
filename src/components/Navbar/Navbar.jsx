@@ -38,9 +38,8 @@ const Nav = ({ className }) => {
             </div>
 
             <ul
-              className={`lg:flex lg:items-center lg:pb-0 lg:pt-2 pb-12 w-full absolute top-0 justify-evenly lg:static  lg:z-auto z-[-1] left-0 lg:w-full lg:pl-0 pl-9 transition-all duration-500 ease-in ${
-                open ? "top-20 " : "top-[-490px]"
-              } ${open ? "bg-[#092058] md:bg-none" : ""}}`}
+              className={`lg:flex lg:items-center lg:pb-0 lg:pt-2 pb-12 w-full absolute top-0 justify-evenly lg:static  lg:z-auto z-[-1] left-0 lg:w-full lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "top-20 " : "top-[-490px]"
+                } ${open ? "bg-[#092058] md:bg-none" : ""}}`}
             >
               {Links.map((link) => (
                 <li key={link.name} className="lg:ml-8 text-xl lg:my-4 my-7">
@@ -52,7 +51,7 @@ const Nav = ({ className }) => {
                   </Link>
                 </li>
               ))}
-              <Button className="lg:absolute top-6 right-7 border-2 border-blue-400 hover:border-blue-700 rounded-full px-7 py-3 md:text-[24px] text-[16px]">
+              <Button className="lg:absolute top-6 right-7 border-2 border-[#07b2d9] hover:bg-[#07b2d9] rounded-full px-7 py-2 text-base md:text-xl">
                 Login
               </Button>
             </ul>

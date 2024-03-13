@@ -16,34 +16,34 @@ function Footer() {
               </div>
               <a
                 href="#"
-                className="mc-btn-1 flex items-center mb-4 w-[40%] text-black"
+                className="mc-btn-1 flex items-center mb-4 w-[40%] text-black hover:text-white font-semibold hover:bg-[#07b2d9] transition-colors duration-300"
               >
                 <i className="fas fa-unlock-alt mr-2"></i>Login
               </a>
               <ul className="mc-social-links flex gap-4">
                 <li>
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
+                  <a className="hover:bg-[#07b2d9] transition-colors duration-300 group" href="#">
+                    <i className="fab fa-facebook-f group-hover:text-white transition-all duration-200"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
+                  <a className="hover:bg-[#07b2d9] transition-colors duration-300 group" href="#">
+                    <i className="fab fa-twitter group-hover:text-white transition-all duration-200"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fab fa-instagram"></i>
+                  <a className="hover:bg-[#07b2d9] transition-colors duration-300 group" href="#">
+                    <i className="fab fa-instagram group-hover:text-white transition-all duration-200"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fab fa-youtube"></i>
+                  <a className="hover:bg-[#07b2d9] transition-colors duration-300 group" href="#">
+                    <i className="fab fa-youtube group-hover:text-white transition-all duration-200"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in"></i>
+                  <a className="hover:bg-[#07b2d9] transition-colors duration-300 group" href="#">
+                    <i className="fab fa-linkedin-in group-hover:text-white transition-all duration-200"></i>
                   </a>
                 </li>
               </ul>
@@ -135,7 +135,7 @@ function Footer() {
                   placeholder="Email address..."
                   className="w-full border border-gray-400 rounded-md px-4 py-2 mb-2"
                 />
-                <button className="mc-btn-1 w-full" type="submit">
+                <button className="py-3 rounded-full border-2 border-[#07b2d9] font-semibold text-lg w-full hover:text-white hover:bg-[#07b2d9] transition-colors duration-300">
                   Subscribe
                 </button>
               </form>

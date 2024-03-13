@@ -79,10 +79,10 @@ function Home() {
                   Innovation Today, Relevance Tomorrow Precision Solutions,
                   Tailored to YOU
                 </p>
-                <a href="#" className="mc-btn-2 py-4">
+                <a href="#" className="mc-btn-2 py-4 cursor-pointer hover:bg-transparent transition-colors duration-300">
                   Contact Us
                 </a>
-                <a href="#" className="mc-btn-1 py-4">
+                <a href="#" className="mc-btn-1 py-4 cursor-pointer hover:bg-[#07b2d9] transition-colors duration-300">
                   Learn More
                 </a>
               </div>
@@ -258,7 +258,7 @@ function Home() {
                   <li>anywhere</li>
                   <li>anytime</li>
                 </ul>
-                <Link to="/demo" className="mc-btn-1">
+                <Link to="/demo" className="mc-btn-1 hover:bg-[#07b2d9] transition-colors duration-300">
                   Try Demo
                 </Link>
               </div>
@@ -452,10 +452,10 @@ function Home() {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam.
                 </p>
-                <a href="#" className="mc-btn-2">
+                <a href="#" className="mc-btn-2 hover:bg-transparent hover:text-black transition-colors duration-300">
                   Contact Us
                 </a>
-                <a href="#" className="mc-btn-1">
+                <a href="#" className="mc-btn-1 hover:bg-[#07b2d9] transition-colors duration-300">
                   Learn More
                 </a>
               </div>
