@@ -1,36 +1,36 @@
-import "./miniCenterStyle.css";
-import treetranparentpng from "../../assets/images/Minicenter PSD Images/tree-tranparent.png";
-import glowimgpng from "../../assets/images/Minicenter PSD Images/glow-img.png";
+import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import circlepng from "../../assets/images/Minicenter PSD Images/circle.png";
 import glow2png from "../../assets/images/Minicenter PSD Images/glow-2.png";
 import glow3png from "../../assets/images/Minicenter PSD Images/glow-3.png";
 import glow4png from "../../assets/images/Minicenter PSD Images/glow-4.png";
 import glow5png from "../../assets/images/Minicenter PSD Images/glow-5.png";
 import glow6png from "../../assets/images/Minicenter PSD Images/glow-6.png";
-import sol1png from "../../assets/images/Minicenter PSD Images/sol1.png";
-import sol2png from "../../assets/images/Minicenter PSD Images/sol2.png";
-import sol3png from "../../assets/images/Minicenter PSD Images/sol3.png";
-import sol4png from "../../assets/images/Minicenter PSD Images/sol4.png";
-import sol5png from "../../assets/images/Minicenter PSD Images/sol5.png";
-import operationalpng from "../../assets/images/Minicenter PSD Images/operational.png";
-import strategicpng from "../../assets/images/Minicenter PSD Images/strategic.png";
-import circlepng from "../../assets/images/Minicenter PSD Images/circle.png";
+import glowimgpng from "../../assets/images/Minicenter PSD Images/glow-img.png";
+import graph from "../../assets/images/Minicenter PSD Images/graph.jpg";
 import laptop from "../../assets/images/Minicenter PSD Images/laptop.png";
+import logoipsum214png from "../../assets/images/Minicenter PSD Images/logoipsum-214.png";
 import logoipsum241png from "../../assets/images/Minicenter PSD Images/logoipsum-241.png";
 import logoipsum289png from "../../assets/images/Minicenter PSD Images/logoipsum-289.png";
 import logoipsum323png from "../../assets/images/Minicenter PSD Images/logoipsum-323.png";
 import logoipsum331png from "../../assets/images/Minicenter PSD Images/logoipsum-331.png";
 import logoipsum332png from "../../assets/images/Minicenter PSD Images/logoipsum-332.png";
-import logoipsum214png from "../../assets/images/Minicenter PSD Images/logoipsum-214.png";
-import graph from "../../assets/images/Minicenter PSD Images/graph.jpg";
+import operationalpng from "../../assets/images/Minicenter PSD Images/operational.png";
 import rdot from "../../assets/images/Minicenter PSD Images/red-dot.png";
-import rline from "../../assets/images/Minicenter PSD Images/red-line-1.png";
-import miniline from "../../assets/images/Minicenter PSD Images/mini-line.png";
-import Nav from "../../components/Navbar/Navbar";
+import rline from "../../assets/images/Minicenter PSD Images/red-line-1-1.png";
+import rline3 from "../../assets/images/Minicenter PSD Images/redline 3.png";
+import sol1png from "../../assets/images/Minicenter PSD Images/sol1.png";
+import sol2png from "../../assets/images/Minicenter PSD Images/sol2.png";
+import sol3png from "../../assets/images/Minicenter PSD Images/sol3.png";
+import sol4png from "../../assets/images/Minicenter PSD Images/sol4.png";
+import sol5png from "../../assets/images/Minicenter PSD Images/sol5.png";
+import strategicpng from "../../assets/images/Minicenter PSD Images/strategic.png";
+import treetranparentpng from "../../assets/images/Minicenter PSD Images/tree-tranparent.png";
 import Footer from "../../components/Footer/Footer";
-import { Link } from "react-router-dom";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Nav from "../../components/Navbar/Navbar";
+import "./miniCenterStyle.css";
 
 function Home() {
   // Responsive slider settings
@@ -79,10 +79,16 @@ function Home() {
                   Innovation Today, Relevance Tomorrow Precision Solutions,
                   Tailored to YOU
                 </p>
-                <a href="#" className="mc-btn-2 py-4 cursor-pointer hover:bg-transparent transition-colors duration-300">
+                <a
+                  href="#"
+                  className="mc-btn-2 py-4 cursor-pointer hover:bg-transparent transition-colors duration-300"
+                >
                   Contact Us
                 </a>
-                <a href="#" className="mc-btn-1 py-4 cursor-pointer hover:bg-[#07b2d9] transition-colors duration-300">
+                <a
+                  href="#"
+                  className="mc-btn-1 py-4 cursor-pointer hover:bg-[#07b2d9] transition-colors duration-300"
+                >
                   Learn More
                 </a>
               </div>
@@ -95,9 +101,15 @@ function Home() {
                   alt="tree-tranparent"
                 />
                 <img className="red-dot" src={rdot} alt="dot" />
+
                 <img
-                  className="red-line-1 big-line"
+                  className="red-line-1 big-line z-[3] xl:!h-[3425px]"
                   src={rline}
+                  alt="red-line"
+                />
+                <img
+                  className="absolute hidden xl:flex xl:top-[360%] 2xl:top-[315%] right-[33%] z-[3] w-[1000px] xl:!h-[1500px] 2xl:!h-[1700px]"
+                  src={rline3}
                   alt="red-line"
                 />
               </div>
@@ -121,35 +133,35 @@ function Home() {
                 </p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4 z-10">
-              <div className="mc-solution-box">
+            <div className="col-md-6 col-lg-4 !z-[10]">
+              <div className="mc-solution-box ">
                 <img src={sol1png} alt="mission-img" />
                 <h6>Assess</h6>
                 <p>Identify compliance needs, challenges and goals</p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4 z-10">
+            <div className="col-md-6 col-lg-4">
               <div className="mc-solution-box">
                 <img src={sol2png} alt="mission-img" />
                 <h6>Collaborate</h6>
                 <p>Integrate and analyze existing data for insights</p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4 z-10">
+            <div className="col-md-6 col-lg-4">
               <div className="mc-solution-box">
                 <img src={sol3png} alt="mission-img" />
                 <h6>Create</h6>
                 <p>Choose or develop tailored algorithms</p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4 z-10">
+            <div className="col-md-6 col-lg-4 !z-[10]">
               <div className="mc-solution-box">
                 <img src={sol4png} alt="mission-img" />
                 <h6>Train</h6>
                 <p>Iteratively fine-tune and refine the solution</p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4 z-10">
+            <div className="col-md-6 col-lg-4">
               <div className="mc-solution-box">
                 <img src={sol5png} alt="mission-img" />
                 <h6>Optimize</h6>
@@ -162,7 +174,7 @@ function Home() {
         <img className="vector-2" src={glow4png} alt="glow-img" />
       </section>
 
-      <section className="mc-customer-impact-section">
+      <section className="mc-customer-impact-section relative">
         <div className="container px-2 lg:px-8">
           <div className="row items-center">
             <div className="col-lg-6">
@@ -212,7 +224,7 @@ function Home() {
             <div className="col-lg-6">
               <div className="main-img-box">
                 <img
-                  className="red-dot lg:!left-40 lg:!-top-5 2xl:!left-40 2xl:!top-5"
+                  className="red-dot lg:!left-[130px] lg:!-top-12 2xl:!left-32 2xl:!top-4"
                   src={rdot}
                   alt="red-dot"
                 />
@@ -220,7 +232,7 @@ function Home() {
                 <img className="img-fluid " src={circlepng} alt="circle" />
                 <img className="vector" src={glow5png} alt="glow-img" />
                 <img
-                  className="red-dot lg:!left-48 lg:!top-[88%]"
+                  className="red-dot xl:!left-90px] 2xl:!left-[100px] xl:!top-[97%] 2xl:!top-[91%]"
                   src={rdot}
                   alt="red-dot"
                 />
@@ -236,7 +248,7 @@ function Home() {
             <div className="col-lg-6">
               <div className="advanced-img-box">
                 <img
-                  className="red-dot absolute !left-[78%] !-top-[10%] "
+                  className="red-dot absolute xl:!left-[67%] xl:!top-[7%] 2xl:!left-[70%] 2xl:!-top-[3%] "
                   src={rdot}
                   alt="red-dot"
                 />
@@ -244,7 +256,12 @@ function Home() {
                 <img className="vector" src={glow6png} alt="glow-img" />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 relative">
+              <img
+                className="absolute xl:!left-[190px] xl:!top-[347px] 2xl:!left-[210px] 2xl:!top-[330px] z-[2]"
+                src={rdot}
+                alt="red-dot"
+              />
               <div className="advanced-content-box">
                 <h3 className="md:text-[60px] text-[24px]">
                   Advanced AI-Solutions
@@ -258,7 +275,10 @@ function Home() {
                   <li>anywhere</li>
                   <li>anytime</li>
                 </ul>
-                <Link to="/demo" className="mc-btn-1 hover:bg-[#07b2d9] transition-colors duration-300">
+                <Link
+                  to="/demo"
+                  className="mc-btn-1 hover:bg-[#07b2d9] transition-colors duration-300"
+                >
                   Try Demo
                 </Link>
               </div>
@@ -267,11 +287,11 @@ function Home() {
         </div>
       </section>
 
-      <section className="mc-partners-section">
+      <section className="mc-partners-section relative z-[4]">
         <div className="container px-2 lg:px-8">
-          <div className="row">
+          <div className="row">`
             <div className="col-lg-12">
-              <div className="mc-partners-content ">
+              <div className="mc-partners-content   ">
                 <h4>Trusted by Global Leaders</h4>
                 <div className="row align-content-center">
                   <div className="col-sm-6 col-md-4 col-lg-3 col-xl-2">
@@ -309,21 +329,23 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className="absolute"></div>
       </section>
 
       <section className="mc-case-study-section py-[5%] relative overflow-hidden">
         {/* Causing over flow */}
+
         <div className="absolute top-[30%] left-0 ml-[-5%] h-[50%] w-[10%] bg-gray-400 opacity-50 rounded-full z-1 shadow-right"></div>
         <div className="absolute top-[30%] right-[-5%] w-[10%] h-[50%] bg-gray-400 opacity-50 rounded-full z-1 shadow-left"></div>
         <div className="container px-2 lg:px-8">
           <div className="row  z-10">
             <div className="col-lg-12">
-              <div className="mc-header-content">
+              <div className="mc-header-content !z-[10] ">
                 <h3 className="md:text-[60px] text-[36px] font-extrabold">
                   Case Studies
                 </h3>
               </div>
-              <div className="case-study-wrapper xl:hidden">
+              <div className="case-study-wrapper  xl:hidden">
                 <Slider {...settings}>
                   <div className="item">
                     <div className="case-study-box">
@@ -377,7 +399,7 @@ function Home() {
                   </div>
                 </Slider>
               </div>
-              <div className="case-study-wrapper hidden xl:block h-[50vh] bg-white"></div>
+              <div className="case-study-wrapper hidden xl:block !h-[400px] lg:!h-[400px] 2xl:!h-[400px] bg-white"></div>
             </div>
           </div>
         </div>
@@ -439,7 +461,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="mc-join-us-section">
+      <section className="mc-join-us-section relative">
         <div className="container px-2 lg:px-8">
           <div className="row">
             <div className="col-lg-12">
@@ -452,10 +474,16 @@ function Home() {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam.
                 </p>
-                <a href="#" className="mc-btn-2 hover:bg-transparent hover:text-black transition-colors duration-300">
+                <a
+                  href="#"
+                  className="mc-btn-2 hover:bg-transparent hover:text-black transition-colors duration-300"
+                >
                   Contact Us
                 </a>
-                <a href="#" className="mc-btn-1 hover:bg-[#07b2d9] transition-colors duration-300">
+                <a
+                  href="#"
+                  className="mc-btn-1 hover:bg-[#07b2d9] transition-colors duration-300"
+                >
                   Learn More
                 </a>
               </div>
@@ -464,7 +492,7 @@ function Home() {
         </div>
       </section>
       <Footer />
-      <img className="mini-line" src={miniline} alt="line" />
+      {/* <img className="mini-line" src={miniline} alt="line" /> */}
     </>
   );
 }
