@@ -103,12 +103,12 @@ function Home() {
                 <img className="red-dot" src={rdot} alt="dot" />
 
                 <img
-                  className="red-line-1 big-line z-[3] xl:!h-[3425px]"
+                  className="red-line-1 big-line z-[3] xl:!h-[3425px] !opacity-70"
                   src={rline}
                   alt="red-line"
                 />
                 <img
-                  className="absolute hidden xl:flex xl:top-[360%] 2xl:top-[315%] right-[33%] z-[3] w-[1000px] xl:!h-[1500px] 2xl:!h-[1700px]"
+                  className="absolute hidden xl:flex xl:top-[360%] 2xl:top-[315%] !opacity-70 right-[33%] z-[3] w-[1000px] xl:!h-[1500px] 2xl:!h-[1700px]"
                   src={rline3}
                   alt="red-line"
                 />
@@ -335,17 +335,17 @@ function Home() {
       <section className="mc-case-study-section py-[5%] relative overflow-hidden">
         {/* Causing over flow */}
 
-        <div className="absolute top-[30%] left-0 ml-[-5%] h-[50%] w-[10%] bg-gray-400 opacity-50 rounded-full z-1 shadow-right"></div>
-        <div className="absolute top-[30%] right-[-5%] w-[10%] h-[50%] bg-gray-400 opacity-50 rounded-full z-1 shadow-left"></div>
-        <div className="container px-2 lg:px-8">
-          <div className="row  z-10">
+        <div className="absolute top-[30%] left-[-5%] h-[50%] w-[10%] bg-gray-400 opacity-50 rounded-full shadow-right"></div>
+        <div className="absolute top-[30%] right-[-5%] w-[10%] h-[50%] bg-gray-400 opacity-50 rounded-full shadow-left"></div>
+        <div className="container !z-[2]">
+          <div className="row z-10">
             <div className="col-lg-12">
               <div className="mc-header-content !z-[10] ">
                 <h3 className="md:text-[60px] text-[36px] font-extrabold">
                   Case Studies
                 </h3>
               </div>
-              <div className="case-study-wrapper  xl:hidden">
+              <div className="case-study-wrapper!w-full xl:hidden">
                 <Slider {...settings}>
                   <div className="item">
                     <div className="case-study-box">
@@ -399,12 +399,12 @@ function Home() {
                   </div>
                 </Slider>
               </div>
-              <div className="case-study-wrapper hidden xl:block !h-[400px] lg:!h-[400px] 2xl:!h-[400px] bg-white"></div>
+              <div className=" hidden xl:block !h-[400px] lg:!h-[400px] 2xl:!h-[400px]"></div>
             </div>
           </div>
         </div>
-        <div className="z-10 hidden xl:block px-24 ">
-          <div className="absolute top-[30%] w-[90%]   z-10 ">
+        <div className="z-10 hidden xl:block px-24">
+          <div className="absolute top-[30%] w-[90%] z-10">
             <Slider {...settings}>
               <div className="item !flex items-center justify-center">
                 <div className="case-study-box">

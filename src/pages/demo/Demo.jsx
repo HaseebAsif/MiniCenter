@@ -51,7 +51,7 @@ const Demo = () => {
     <section className="bg-[#d4e7f7] min-h-screen relative overflow-hidden z-0">
       <ScrollToTopOnMount />
       {/* Navbar */}
-      <div className="w-full absolute top-0 left-0 z-50 lg:bg-none text-black">
+      <div className="w-full absolute top-0 left-0 z-50 lg:bg-none text-black hover:!shadow-lg">
         <Container className="relative items-center">
           <div className="lg:flex items-center justify-between bg-none py-4 px-5">
             <div className="menu flex gap-2">
@@ -114,15 +114,16 @@ const Demo = () => {
               <p className="text-3xl font-bold mt-4">
                 How can I help you today?
               </p>
+              <textarea
+                className=" mt-5 p-4 w-full max-w-md rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:border-blue-500 flex justify-center mx-auto"
+                name=""
+                id=""
+                cols="30"
+                rows="2"
+                placeholder="Enter your message here..."
+              ></textarea>
             </div>
-            <textarea
-              className="mt-4 p-4 w-full max-w-md rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:border-blue-500 flex justify-center mx-auto"
-              name=""
-              id=""
-              cols="30"
-              rows="2"
-              placeholder="Enter your message here..."
-            ></textarea>
+
             <div className="d-fields w-full flex flex-wrap justify-between py-12">
               <button
                 className={`card md:w-[48%] w-[100%] text-left transition-all duration-500 mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
