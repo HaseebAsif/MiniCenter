@@ -168,14 +168,14 @@ const Research = () => {
               </div>
             </div>
             <div className="flex justify-center pb-20">
-              <button className="rounded-full md:px-3 px-2 md:py-4 py-2 border-2 border-[#14b6db] hover:border-blue-800 md:w-[200px] w-[150px] duration-500 font-medium md:text-[24px] text-20px ">
+              <button className="rounded-full md:px-3 px-2 md:py-4 py-2 border-2 border-[#14b6db] hover:bg-[#14b6db] hover:text-white md:w-[200px] w-[150px] duration-500 font-medium md:text-[24px] text-20px ">
                 <Link to="/demo">See Demo</Link>
               </button>
             </div>
           </section>
         </Container>
       </section>
-      <img src={rline} alt="" className="absolute top-0 right-0 h-full z-[0]" />
+      <img src={rline} alt="" className="absolute top-0 right-0 h-full z-[0] opacity-70" />
       <img
         src={bline}
         alt=""

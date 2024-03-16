@@ -72,9 +72,8 @@ const Demo = () => {
               </div>
 
               <ul
-                className={`lg:flex lg:items-center lg:pb-0 lg:pt-2 pb-12 w-full absolute top-0 justify-evenly lg:static  lg:z-auto z-[-1] left-0 lg:w-full lg:pl-0 pl-9 transition-all duration-500 ease-in ${
-                  open ? "top-20" : "top-[-490px]"
-                }
+                className={`lg:flex lg:items-center lg:pb-0 lg:pt-2 pb-12 w-full absolute top-0 justify-evenly lg:static  lg:z-auto z-[-1] left-0 lg:w-full lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "top-20" : "top-[-490px]"
+                  }
                   ${open ? "bg-[#d4e7f7] md:bg-none" : ""}}`}
               >
                 {Links.map((link) => (
@@ -91,10 +90,10 @@ const Demo = () => {
                   </li>
                 ))}
                 <Button
-                  className="lg:absolute top-6 right-7 border-2 border-blue-400  hover:border-blue-700 rounded-full px-7 py-3 lg:text-[24px] text-[16px] text-black"
+                  className="lg:absolute top-6 right-7 border-2 border-[#14b6db] hover:bg-[#14b6db] group rounded-full px-7 py-3 lg:text-[24px] text-[16px] text-black"
                   style={{ color: "black" }}
                 >
-                  <span className="text-black">Login</span>
+                  <span className="text-black group-hover:text-white">Login</span>
                 </Button>
               </ul>
             </div>
@@ -126,9 +125,8 @@ const Demo = () => {
 
             <div className="d-fields w-full flex flex-wrap justify-between py-12">
               <button
-                className={`card md:w-[48%] w-[100%] text-left transition-all duration-500 mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
-                  activeButton === 1 ? "bg-[#07b2d9] text-white" : "bg-none"
-                }`}
+                className={`card md:w-[48%] w-[100%] text-left transition-all duration-500 mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${activeButton === 1 ? "bg-[#07b2d9] text-white" : "bg-none"
+                  }`}
                 onClick={() => handleButtonClick2(1)}
               >
                 <h2 className="text-xl font-semibold mb-2">
@@ -141,9 +139,8 @@ const Demo = () => {
 
               {/* Button 2 */}
               <button
-                className={`card md:w-[48%] w-[100%] transition-all duration-500 text-left mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
-                  activeButton === 2 ? "bg-[#07b2d9] text-white" : "bg-none"
-                }`}
+                className={`card md:w-[48%] w-[100%] transition-all duration-500 text-left mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${activeButton === 2 ? "bg-[#07b2d9] text-white" : "bg-none"
+                  }`}
                 onClick={() => handleButtonClick2(2)}
               >
                 <h2 className="text-xl font-semibold mb-2">
@@ -156,9 +153,8 @@ const Demo = () => {
 
               {/* Button 3 */}
               <button
-                className={`text-left card md:w-[48%] w-[100%] transition-all duration-500 mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
-                  activeButton === 3 ? "bg-[#07b2d9] text-white" : "bg-none"
-                }`}
+                className={`text-left card md:w-[48%] w-[100%] transition-all duration-500 mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${activeButton === 3 ? "bg-[#07b2d9] text-white" : "bg-none"
+                  }`}
                 onClick={() => handleButtonClick2(3)}
               >
                 <h2 className="text-xl font-semibold mb-2">
@@ -171,9 +167,8 @@ const Demo = () => {
 
               {/* Button 4 */}
               <button
-                className={`text-left card md:w-[48%] w-[100%] transition-all duration-500 mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${
-                  activeButton === 4 ? "bg-[#07b2d9] text-white" : "bg-none"
-                }`}
+                className={`text-left card md:w-[48%] w-[100%] transition-all duration-500 mb-8 border-2 border-[#07b2d9] rounded-3xl p-6 ${activeButton === 4 ? "bg-[#07b2d9] text-white" : "bg-none"
+                  }`}
                 onClick={() => handleButtonClick2(4)}
               >
                 <h2 className="text-xl font-semibold mb-2">
@@ -190,9 +185,8 @@ const Demo = () => {
                 </h1>
                 <div
                   {...getRootProps()}
-                  className={`relative border-2 border-dashed border-[#dde5fa] rounded-full w-full py-6 text-center  mt-5 ${
-                    isDragActive ? "bg-blue-100" : ""
-                  }`}
+                  className={`relative border-2 border-dashed border-[#dde5fa] rounded-full w-full py-6 text-center  mt-5 ${isDragActive ? "bg-blue-100" : ""
+                    }`}
                 >
                   <input
                     type="file"
@@ -242,9 +236,8 @@ const Demo = () => {
                 </h1>
                 <div
                   {...getRootProps2()}
-                  className={`relative border-2 border-dashed border-[#dde5fa] rounded-full w-full py-6 text-center  mt-5 ${
-                    isDragActive2 ? "bg-blue-100" : ""
-                  }`}
+                  className={`relative border-2 border-dashed border-[#dde5fa] rounded-full w-full py-6 text-center  mt-5 ${isDragActive2 ? "bg-blue-100" : ""
+                    }`}
                 >
                   <input
                     type="file"
@@ -294,7 +287,7 @@ const Demo = () => {
       <img
         src={rline}
         alt=""
-        className="absolute top-0 right-[20%] h-full z-[-1]"
+        className="absolute top-0 right-[20%] h-full z-[-1] opacity-70"
       />
       <img
         src={bline}
