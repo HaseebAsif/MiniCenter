@@ -1,4 +1,4 @@
-import { useRef, useState, useCallback } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import Container from "../../common/Container";
 import Button from "../../common/button";
 import Footer from "../../components/Footer/Footer";
@@ -23,6 +23,22 @@ const Demo = () => {
   const fileInputRef = useRef(null);
 
   const [activeButton, setActiveButton] = useState(null);
+  const [scrolled, setScrolled] = useState(false);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 70) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleButtonClick2 = (buttonId) => {
     setActiveButton(buttonId);
@@ -51,7 +67,11 @@ const Demo = () => {
     <section className="bg-[#d4e7f7] min-h-screen relative overflow-hidden z-0">
       <ScrollToTopOnMount />
       {/* Navbar */}
-      <div className="w-full absolute top-0 left-0 z-50 lg:bg-none text-black hover:!shadow-lg">
+      <div
+        className={`w-full fixed top-0 left-0 z-50 lg:bg-none text-black ${
+          scrolled ? "bg-[#bbd8f0] shadow-md" : ""
+        }`}
+      >
         <Container className="relative items-center">
           <div className="lg:flex items-center justify-between bg-none py-4 px-5">
             <div className="menu flex gap-2">

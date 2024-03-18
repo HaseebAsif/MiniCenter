@@ -290,7 +290,7 @@ function Company() {
           width={100}
           height={100}
           alt=""
-          className="absolute top-0 bottom-0 z-[0] right-[0%] h-full w-full"
+          className="absolute top-0 bottom-0 z-[0] right-[0%] !h-[3250px] !w-[1400px]"
         />
         <img
           src={bline}
