@@ -51,36 +51,6 @@ function Home() {
     }
   };
 
-  // Responsive slider settings
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    lazyLoad: true,
-    // autoplay: true,
-    autoplaySpeed: 3000,
-    dotsClass: "slick-dots custom-dots",
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
   return (
     <>
       <Nav />
@@ -351,7 +321,7 @@ function Home() {
       </section>
 
       <section className="mc-case-study-section py-[5%] relative overflow-hidden">
-        <div className="absolute top-[30%] left-[-5%] h-[50%] w-[10%] bg-gray-400 opacity-50 rounded-full z-50">
+        <div className="absolute top-[30%] left-[-5%] h-[50%] w-[10%] bg-gray-400 opacity-50 rounded-full z-40">
           <div
             onClick={prevCard}
             className="flex absolute left-[55%] bottom-[42%] bg-white rounded-full p-3 !z-50 cursor-pointer"
@@ -359,7 +329,7 @@ function Home() {
             <GrPrevious />
           </div>
         </div>
-        <div className="absolute top-[30%] right-[-5%] w-[10%] h-[50%] bg-gray-400 opacity-50 rounded-full z-50">
+        <div className="absolute top-[30%] right-[-5%] w-[10%] h-[50%] bg-gray-400 opacity-50 rounded-full z-40">
           <div
             onClick={nextCard}
             className="flex !z-50 absolute right-[55%] bottom-[42%] bg-white rounded-full p-3 cursor-pointer"
@@ -391,96 +361,26 @@ function Home() {
           }}
           loop={true}
         >
-          <SwiperSlide>
-            <div className="item !flex items-center justify-center">
-              <div className="case-study-box">
-                <div className="graph-box">
-                  <img className="img-fluid" src={graph} alt="graph" />
-                </div>
-                <div className="study-meta-box">
-                  <h4>NASA Shadow Shield Genetic Algorithm</h4>
-                  <p>
-                    Steven conducted research into optimizing NASA&apos;s Shadow
-                    Shield, utilizing C++ to develop his Genetic Algorithm which
-                    increased efficiency of determining the optimal dimensions
-                    and weight of the shield.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="item !flex items-center justify-center">
-              <div className="case-study-box">
-                <div className="graph-box">
-                  <img src={graph} alt="graph" />
-                </div>
-                <div className="study-meta-box">
-                  <h4>NASA Shadow Shield Genetic Algorithm</h4>
-                  <p>
-                    Steven conducted research into optimizing NASA&apos;s Shadow
-                    Shield, utilizing C++ to develop his Genetic Algorithm which
-                    increased efficiency of determining the optimal dimensions
-                    and weight of the shield.
-                  </p>
+          {[1, 2, 3, 4, 5, 6].map((index) => (
+            <SwiperSlide key={index}>
+              <div className="item !flex items-center justify-center">
+                <div className="case-study-box">
+                  <div className="graph-box">
+                    <img className="img-fluid" src={graph} alt="graph" />
+                  </div>
+                  <div className="study-meta-box">
+                    <h4>NASA Shadow Shield Genetic Algorithm</h4>
+                    <p>
+                      Steven conducted research into optimizing NASA&apos;s Shadow
+                      Shield, utilizing C++ to develop his Genetic Algorithm which
+                      increased efficiency of determining the optimal dimensions
+                      and weight of the shield.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="item !flex items-center justify-center">
-              <div className="case-study-box">
-                <div className="graph-box">
-                  <img className="img-fluid" src={graph} alt="graph" />
-                </div>
-                <div className="study-meta-box">
-                  <h4>NASA Shadow Shield Genetic Algorithm</h4>
-                  <p>
-                    Steven conducted research into optimizing NASA&apos;s Shadow
-                    Shield, utilizing C++ to develop his Genetic Algorithm which
-                    increased efficiency of determining the optimal dimensions
-                    and weight of the shield.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="item !flex items-center justify-center">
-              <div className="case-study-box">
-                <div className="graph-box">
-                  <img src={graph} alt="graph" />
-                </div>
-                <div className="study-meta-box">
-                  <h4>NASA Shadow Shield Genetic Algorithm</h4>
-                  <p>
-                    Steven conducted research into optimizing NASA&apos;s Shadow
-                    Shield, utilizing C++ to develop his Genetic Algorithm which
-                    increased efficiency of determining the optimal dimensions
-                    and weight of the shield.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="item !flex items-center justify-center">
-              <div className="case-study-box">
-                <div className="graph-box">
-                  <img src={graph} alt="graph" />
-                </div>
-                <div className="study-meta-box">
-                  <h4>NASA Shadow Shield Genetic Algorithm</h4>
-                  <p>
-                    Steven conducted research into optimizing NASA&apos;s Shadow
-                    Shield, utilizing C++ to develop his Genetic Algorithm which
-                    increased efficiency of determining the optimal dimensions
-                    and weight of the shield.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </section>
 
@@ -515,7 +415,6 @@ function Home() {
         </div>
       </section>
       <Footer />
-      {/* <img className="mini-line" src={miniline} alt="line" /> */}
     </>
   );
 }
