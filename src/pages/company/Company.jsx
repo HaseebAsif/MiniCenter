@@ -276,7 +276,7 @@ function Company() {
                       enim ipsam voluptatem quia voluptas sit aspernatur aut
                       odit aut fugit, sed quia consequuntur
                     </p>
-                    <a href="#" className="mc-btn-1 text-[24px] hover:bg-[#14b6db] transition-all duration-300">
+                    <a href="#" className="mc-btn-1 text-[24px]">
                       Get Started
                     </a>
                   </div>
@@ -290,7 +290,7 @@ function Company() {
           width={100}
           height={100}
           alt=""
-          className="absolute top-0 bottom-0 z-[0] right-[0%] h-full w-full opacity-70"
+          className="absolute top-0 bottom-0 z-[0] right-[0%] h-full w-full"
         />
         <img
           src={bline}
